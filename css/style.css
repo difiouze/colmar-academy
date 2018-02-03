@@ -1,0 +1,63 @@
+html,
+body {
+    font-family: "Lato", sans-serif;
+    color: #4a4a4a;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+a:hover {
+    color: #538fce;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 32px;
+}
+
+.logo img {
+    margin-left: 24px;
+    text-align: center;
+    height: 50px;
+}
+
+
+.logo span {
+    text-transform: uppercase;
+    font-size: 1.7rem
+}
+
+.logo span:first-child {
+    font-weight: 900;
+}
+
+.logo span:last-child {
+    color: grey;
+    font-weight: 400;
+}
+
+header nav {
+    padding-right: 24px;
+}
+
+nav span {
+    display: inline-block;
+    padding-left: 16px;
+}
