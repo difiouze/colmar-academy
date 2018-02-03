@@ -15,7 +15,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 a {
@@ -160,4 +160,39 @@ nav span {
 .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
+}
+
+/* Stories */
+
+#information {
+    background-color: white;
+}
+
+.information-main-image {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.information-main-image img {
+    width: 100%;
+}
+
+.information-main-text {
+    width: 60%;
+    padding-left: 32px;
+}
+
+.information-main-text h2 {
+    padding-bottom: 24px;
+    font-weight: 900;
+}
+
+.information-main-text p {
+    font-size: 1rem;
+}
+
+.information-main-text span {
+    padding-bottom: 32px;
+    font-size: 0.8rem;
+    font-weight: 700
 }
