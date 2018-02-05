@@ -380,6 +380,10 @@ nav span {
     width: 35%;
 }
 
+.thesis-mobile {
+    display: none;
+}
+
 
 /* Footer */
 
@@ -528,4 +532,23 @@ footer {
         padding: 1rem 0 1.5rem 1rem;
         margin-bottom: 0.5rem;
     }
+    
+    #thesis {
+        border: 0;
+    }
+    
+    
+    .thesis-wrapper {
+        display: none;
+    }
+    
+    .thesis-mobile {
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+    
+    .thesis-video {
+        width: 100%;
+    }
+    
 }
