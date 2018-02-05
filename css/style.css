@@ -21,6 +21,7 @@ h3 {
 a {
     text-decoration: none;
     color: #4a4a4a;
+    font-weight: 900;
 }
 
 a:hover {
@@ -78,6 +79,14 @@ nav span {
     font-size: 1.1rem;
 }
 
+.mobile-menu {
+    display: none;
+}
+
+.course-mobile-menu {
+    display: none;
+}
+
 /*  Main  */
 
 .banner {
@@ -119,6 +128,11 @@ nav span {
     background-color: #4a4a4a;
     font-size: 1.2rem;
 }
+
+.start-btn-mobile {
+    display: none;
+}
+
 
 /* Sweep To Bottom. Only one effect imported. Full hover effects available here http://ianlunn.github.io/Hover/ */
 
@@ -253,6 +267,12 @@ nav span {
     color: #538fce;
 }
 
+
+.information-mobile {
+    display: none;
+}
+
+
 /* Course */
 
 #course {
@@ -319,7 +339,7 @@ nav span {
     border-bottom: 1px solid grey;
 }
 
-.thesis-title{
+.thesis-title {
     text-align: center;
     font-weight: 900;
     padding: 2rem 0 1rem 0;
@@ -367,4 +387,145 @@ footer {
     font-size: 0.8rem;
     font-weight: 700;
     padding: 1rem 0 1.5rem 1.5rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+    header {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .mobile-menu img {
+        width: 35px;
+        padding: 0 40px 0 40px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #d8d8d8;
+    }
+    .banner-image {
+        width: 100%;
+        margin: -4rem auto;
+
+    }
+
+    .banner-image img {
+        width: 100%;
+
+    }
+
+    .banner-text {
+        width: 100%;
+        padding-left: 1rem;
+        padding-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-text h1 {
+        font-weight: 900;
+    }
+
+    .banner-text h3 {
+        font-weight: 700;
+        line-height: 2.2rem;
+    }
+    .start-btn {
+        display: none;
+    }
+
+    .start-btn-mobile {
+        display: block;;
+        text-align: center;
+        padding: 0.5rem 10rem;
+        color: white;
+        background-color: #4a4a4a;
+        font-size: 1.2rem;
+        margin-bottom: 2rem
+    }
+
+    .start-btn-mobile:hover {
+        background-color: #538fce;
+    }
+
+    #information {
+        display: none;
+    }
+
+    .information-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .information-box {
+        margin: 1rem;
+    }
+
+    .information-box img {
+        width: 100%;
+
+    }
+
+    .information-mobile-text p {
+        padding-bottom: 1rem;
+    }
+    
+    
+    .information-mobile-text h2 {
+        font-weight: 900;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .information-mobile-text a {
+        color: #538fce;
+    }
+    
+    .course-container {
+        display: none;
+    }
+
+    #course  {
+    background-color: white;
+}
+    
+    .course-mobile-menu {
+        display: flex;
+        width: 100%;
+    }
+
+    .course-mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 1.5rem 1rem;
+        flex: 1;
+    }
+    
+    .course-mobile-menu li {
+        background-color: #d8d8d8;
+        font-size: 1.4rem;
+        font-weight: 900;
+        padding: 1rem 0 1.5rem 1rem;
+        margin-bottom: 0.5rem;
+    }
 }
