@@ -179,6 +179,7 @@ nav span {
 .information-wrapper {
     margin: 32px 24px;
     width: 60%;
+
 }
 
 
@@ -187,7 +188,7 @@ nav span {
 }
 
 .information-text {
-    width: 60%;
+    width: 80%;
     padding-top: 32px;
 }
 
@@ -214,6 +215,7 @@ nav span {
     margin-top: 32px;
     width: 35%;
     height: 100%;
+
 }
 
 .box {
@@ -228,8 +230,12 @@ nav span {
 }
 
 .box-image {
-    margin: 16px;
+    padding: 16px;
     flex: 0 0 35%;
+}
+
+.information-side {
+    margin-top: 16px;
 }
 
 .box-image img {
@@ -246,4 +252,8 @@ nav span {
 .box-text p {
     padding-bottom: 8px;
     flex: 0 0 auto;
+}
+
+.box-text a {
+    color: #538fce;
 }
