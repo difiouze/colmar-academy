@@ -54,7 +54,6 @@ header {
     height: 3rem;
 }
 
-
 .logo span {
     text-transform: uppercase;
     font-size: 1.6rem
@@ -103,7 +102,6 @@ nav span {
 
 .banner-image img {
     width: 100%;
-
 }
 
 .banner-text {
@@ -133,8 +131,7 @@ nav span {
     display: none;
 }
 
-
-/* Sweep To Bottom. Only one effect imported. Full hover effects available here http://ianlunn.github.io/Hover/ */
+/* Sweep To Bottom. Only one effect imported. Full hover effects available at http://ianlunn.github.io/Hover/ */
 
 .hvr-sweep-to-bottom {
     display: inline-block;
@@ -183,19 +180,16 @@ nav span {
     transform: scaleY(1);
 }
 
-/* Stories */
+/* Information */
 
 #information {
     display: flex;
 }
 
-
 .information-wrapper {
     margin: 2rem 1.4rem;
     width: 60%;
-
 }
-
 
 .information-image img {
     width: 100%;
@@ -224,7 +218,6 @@ nav span {
     margin-top: 2rem;
     width: 35%;
     height: 100%;
-
 }
 
 .box {
@@ -252,7 +245,6 @@ nav span {
     height: auto;
 }
 
-
 .box h3 {
     font-weight: 900;
     padding-bottom: 0.5rem;
@@ -267,11 +259,9 @@ nav span {
     color: #538fce;
 }
 
-
 .information-mobile {
     display: none;
 }
-
 
 /* Course */
 
@@ -330,7 +320,6 @@ nav span {
     text-transform: uppercase;
 }
 
-
 /* Thesis */
 
 #thesis {
@@ -384,7 +373,6 @@ nav span {
     display: none;
 }
 
-
 /* Footer */
 
 footer {
@@ -393,28 +381,26 @@ footer {
     padding: 1rem 0 1.5rem 1.5rem;
 }
 
+/* Media Query */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
     header {
         display: none;
     }
 
     .mobile-menu {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 4rem;
     }
 
-    .mobile-menu ul {
-        display: flex;
-        align-items: center;
+    .mobile-menu img {
+        width: 2.8rem;
     }
 
-
-    .mobile-menu img {
-        width: 35px;
-        padding: 0 40px 0 40px;
+    .mobile-menu img:hover {
+        opacity: 0.2;
     }
 
     .banner {
@@ -427,21 +413,18 @@ footer {
     .banner-image {
         width: 100%;
         margin: -4rem auto;
-
     }
 
     .banner-image img {
         width: 100%;
-
     }
 
     .banner-text {
-        width: 100%;
-        padding-left: 1rem;
+        width: 90%;
+        padding-right: 1rem;
         padding-top: 6rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .banner-text h1 {
@@ -457,7 +440,7 @@ footer {
     }
 
     .start-btn-mobile {
-        display: block;;
+        display: block;
         text-align: center;
         padding: 0.5rem 10rem;
         color: white;
@@ -486,33 +469,30 @@ footer {
 
     .information-box img {
         width: 100%;
-
     }
 
     .information-mobile-text p {
         padding-bottom: 1rem;
     }
-    
-    
+
     .information-mobile-text h2 {
         font-weight: 900;
         padding-top: 1rem;
         padding-bottom: 1rem;
-
     }
 
     .information-mobile-text a {
         color: #538fce;
     }
-    
+
     .course-container {
         display: none;
     }
 
-    #course  {
-    background-color: white;
-}
-    
+    #course {
+        background-color: white;
+    }
+
     .course-mobile-menu {
         display: flex;
         width: 100%;
@@ -524,7 +504,7 @@ footer {
         margin: 0 1rem 1.5rem 1rem;
         flex: 1;
     }
-    
+
     .course-mobile-menu li {
         background-color: #d8d8d8;
         font-size: 1.4rem;
@@ -532,23 +512,33 @@ footer {
         padding: 1rem 0 1.5rem 1rem;
         margin-bottom: 0.5rem;
     }
-    
+
+    .course-mobile-menu li:hover {
+        background-color: #538fce;
+        color: white;
+    }
+
     #thesis {
         border: 0;
     }
-    
-    
+
     .thesis-wrapper {
         display: none;
     }
-    
+
     .thesis-mobile {
         display: flex;
         margin-bottom: 1.5rem;
     }
-    
+
     .thesis-video {
         width: 100%;
     }
-    
+
+    footer {
+        font-size: 0.8rem;
+        font-weight: 900;
+        padding: 1rem 0 1.5rem 0.5rem;
+    }
+
 }
